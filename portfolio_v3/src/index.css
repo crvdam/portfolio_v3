@@ -1,0 +1,8 @@
+:root {
+  --bg-primary: #dee2e6;
+  --bg-secondary: #f8f9fa;
+  --clr-primary: #212529;
+
+  background-color: var(--bg-primary);
+  color: var(--clr-primary);
+}
