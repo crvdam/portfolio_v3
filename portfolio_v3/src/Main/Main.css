@@ -1,3 +1,64 @@
 main {
   max-width: 1280px;
+  margin: auto;
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+.tile {
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--clr-border);
+  box-shadow: var(--box-shadow);
+  background-color: var(--bg-secondary);
+}
+
+.introduction {
+  min-height: 240px;
+}
+
+.section-title {
+  margin-left: 1rem;
+}
+
+.project {
+  margin-bottom: 1rem;
+}
+
+.resume-subcategory {
+  margin-bottom: 3rem;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill {
+  border-radius: 100vw;
+  background-color: var(--bg-secondary);
+  padding: 0.5rem 1rem;
+  box-shadow: var(--box-shadow);
+}
+
+.function-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.function-title {
+  font-weight: 700;
+}
+
+.responsibilities {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  li:not(last-child) {
+    margin-bottom: 1rem;
+  }
 }
