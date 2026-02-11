@@ -11,9 +11,7 @@ function Header() {
           version="1.1"
           id="Icons"
           xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
           viewBox="0 0 32 32"
-          xml:space="preserve"
         >
           <g>
             <path d="M13,7c-0.6,0-1-0.4-1-1V5c0-0.6,0.4-1,1-1s1,0.4,1,1v1C14,6.6,13.6,7,13,7z" />

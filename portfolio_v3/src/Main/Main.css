@@ -21,21 +21,12 @@ h1 {
   margin-top: 1rem;
 }
 
-.superscript {
-  font-size: 11px;
-  color: var(--clr-secondary);
-}
-
-.subscript {
-  color: var(--clr-secondary);
-}
-
 .introduction-wrapper {
   flex-grow: 1;
 }
 
 .introduction {
-  min-height: 320px;
+  min-height: 360px;
   padding-top: 2rem;
   display: flex;
   flex-direction: column;
@@ -45,10 +36,14 @@ h1 {
   margin-left: 1rem;
 }
 
-.projects-list {
+.tile-list {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+
+.project {
+  min-height: 120px;
 }
 
 .resume-subcategory {
@@ -71,17 +66,9 @@ h1 {
 .function-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 .function-title {
   font-weight: 700;
-}
-
-.responsibilities {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-
-  li:not(last-child) {
-    margin-bottom: 1rem;
-  }
 }

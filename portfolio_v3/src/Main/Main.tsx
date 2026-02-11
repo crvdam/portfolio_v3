@@ -6,47 +6,42 @@ function Main() {
     <main>
       <section className="introduction tile">
         <div className="introduction-wrapper">
-          <p className="superscript">Hi, my name is</p>
+          <p className="text-tiny">Hi, my name is</p>
           <h1>Caspar van Dam</h1>
-          <h3 className="subscript">Web developer</h3>
+          <h3>Web developer</h3>
         </div>
         <Socials />
       </section>
 
-      <section className="projects">
+      <section>
         <h2 className="section-title">Projects</h2>
-        <ul className="projects-list">
-          <li className="tile">
-            <h3>Project name</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
-              assumenda velit vitae, libero, totam consectetur deserunt illo
-              minus maxime ex commodi sequi dicta laborum ipsa esse, distinctio
-              error animi?
+        <ul className="tile-list">
+          <li className="tile project">
+            <h3>Recipes</h3>
+            <p className="text-small">
+              A recipe website built with Next.js that fetches and displays meal
+              data from TheMealDB API.
             </p>
           </li>
-          <li className="tile">
-            <h3>Project name</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
-              assumenda velit vitae, libero, totam consectetur deserunt illo
-              minus maxime ex commodi sequi dicta laborum ipsa esse, distinctio
-              error animi?
+          <li className="tile project">
+            <h3>Portrait</h3>
+            <p className="text-small">
+              A guessing game built with Svelte where players identify blurred
+              celebrity portraits using data from the TMDb API.
             </p>
           </li>
-          <li className="tile">
-            <h3>Project name</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
-              assumenda velit vitae, libero, totam consectetur deserunt illo
-              minus maxime ex commodi sequi dicta laborum ipsa esse, distinctio
-              error animi?
+          <li className="tile project">
+            <h3>Real-estate</h3>
+            <p className="text-small">
+              A real estate front-end built with Vue that allows users to
+              search, filter, create, and edit property listings, using Pinia
+              for state management and Vue Router for navigation.
             </p>
           </li>
         </ul>
       </section>
 
-      <section className="resume">
+      <section>
         <h2>Resume</h2>
 
         <div className="resume-subcategory">
@@ -71,31 +66,55 @@ function Main() {
           <div className="experience-item tile">
             <div className="function-wrapper">
               <h4 className="function-title">Junior Front-end Developer</h4>
-              <span className="function-duration">march 2025 - present</span>
+              <span className="text-tiny">2025 - present</span>
             </div>
             <p>Accessify SaaS</p>
-            <ul className="responsibilities">
-              <li>Responsibility 1</li>
-              <li>Responsibility 2</li>
-              <li>Responsibility 3</li>
+            <ul className="styled-list">
+              <li className="text-small">
+                Collaborated with a multidisciplinary team of developers,
+                designers, and a product owner on a SaaS product the facilitates
+                online platforms for B2B companies.
+              </li>
+              <li className="text-small">
+                Implemented automatic end-to-end form testing with Playwright.
+              </li>
+              <li className="text-small">
+                Monitored and optimized performance according to Core Web
+                Vitals.
+              </li>
+              <li className="text-small">
+                Developed templates and components based on Figma wireframes.
+              </li>
+              <li className="text-small">
+                Served as Product Owner for Accessify’s lead generation
+                platform.
+              </li>
             </ul>
           </div>
         </div>
         <div className="resume-subcategory">
           <h3>Education</h3>
-          <div className="education-item tile">
-            <h4>Work & Organizational Psychology</h4>
-            <p>Master's</p>
-            <p></p>
-          </div>
-          <div className="education-item tile">
-            <h4>Work & Organizational Psychology</h4>
-            <p>Bachelors's</p>
-          </div>
-          <div className="education-item tile">
-            <h4>Clinical & Health Psychology</h4>
-            <p>Bachelors's</p>
-          </div>
+          <ul className="tile-list">
+            <li>
+              <div className="tile">
+                <h4>Master's Work & Organizational Psychology</h4>
+                <p>Utrecht University</p>
+                <p></p>
+              </div>
+            </li>
+            <li>
+              <div className="tile">
+                <h4>Bachelor's Work & Organizational Psychology</h4>
+                <p>Utrecht University</p>
+              </div>
+            </li>
+            <li>
+              <div className="tile">
+                <h4>Bachelors's Clinical & Health Psychology</h4>
+                <p>Utrecht University</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
     </main>

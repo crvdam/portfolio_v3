@@ -34,7 +34,7 @@ h2 {
 h3 {
   font-size: 1.25rem;
   margin-bottom: 1.5rem;
-  color: var(--clr-header);
+  color: var(--clr-text);
 }
 
 h4 {
@@ -50,4 +50,21 @@ ul {
 .icon {
   width: 24px;
   height: 24px;
+}
+
+.text-small {
+  font-size: 14px;
+}
+
+.text-tiny {
+  font-size: 11px;
+}
+
+.styled-list {
+  list-style: disclosure-closed;
+  margin-left: 1rem;
+
+  li {
+    margin: 10px 0;
+  }
 }
