@@ -1,0 +1,18 @@
+.socials {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+
+  svg {
+    height: 24px;
+    width: 24px;
+  }
+
+  svg.shrink {
+    height: 20px;
+  }
+
+  svg path {
+    fill: var(--clr-text);
+  }
+}
