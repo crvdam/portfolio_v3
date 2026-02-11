@@ -16,16 +16,39 @@ section {
   background-color: var(--bg-secondary);
 }
 
+h1 {
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
+.superscript {
+  font-size: 11px;
+  color: var(--clr-secondary);
+}
+
+.subscript {
+  color: var(--clr-secondary);
+}
+
+.introduction-wrapper {
+  flex-grow: 1;
+}
+
 .introduction {
-  min-height: 240px;
+  min-height: 320px;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .section-title {
   margin-left: 1rem;
 }
 
-.project {
-  margin-bottom: 1rem;
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .resume-subcategory {
