@@ -1,0 +1,21 @@
+header {
+  height: 2.5rem;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  background-color: var(--bg-secondary);
+  box-shadow: var(--box-shadow);
+  border-bottom: 1px solid var(--clr-border);
+
+  svg {
+    margin-right: 1rem;
+    height: 28px;
+    width: 28px;
+  }
+}
+
+.spacer {
+  height: 4rem;
+}
