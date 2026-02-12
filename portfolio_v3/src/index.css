@@ -68,3 +68,9 @@ ul {
     margin: 10px 0;
   }
 }
+
+button {
+  border: none;
+  background-color: unset;
+  cursor: pointer;
+}
