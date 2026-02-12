@@ -1,0 +1,25 @@
+.slider {
+  background: transparant;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  margin: 5px;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  border: 8px solid white;
+  inset: -3px;
+  border-radius: 50%;
+}
+
+.slider-control {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: black;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
