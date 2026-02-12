@@ -1,7 +1,11 @@
 import "./Slider.css";
 import { useEffect, useRef, useState } from "react";
 
-function Slider() {
+interface SliderProps {
+  onValueChange: (percentage: number) => void;
+}
+
+function Slider({ onValueChange }: SliderProps) {
   const circleRef = useRef<HTMLDivElement>(null);
   const [controlPos, setControlPos] = useState<{
     left: string | number;
@@ -10,7 +14,6 @@ function Slider() {
     left: "50%",
     top: 0,
   });
-  const [sliderPercentage, setSliderPercentage] = useState(0);
 
   const moveControl = (event: globalThis.MouseEvent) => {
     if (!circleRef.current) return;
@@ -45,7 +48,8 @@ function Slider() {
     });
 
     let adjusted = (theta + Math.PI / 2 + 2 * Math.PI) % (2 * Math.PI);
-    setSliderPercentage((adjusted / (2 * Math.PI)) * 100);
+    const newPercentage = (adjusted / (2 * Math.PI)) * 100;
+    onValueChange(newPercentage);
   };
 
   const onMouseDown = () => {
@@ -67,7 +71,6 @@ function Slider() {
           onMouseDown={onMouseDown}
         ></div>
       </div>
-      <h2>{sliderPercentage.toFixed(0)}</h2>
     </>
   );
 }
