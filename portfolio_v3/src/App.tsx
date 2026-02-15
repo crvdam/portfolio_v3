@@ -3,7 +3,11 @@ import Header from "./Header/Header";
 import Main from "./Main/Main";
 import Footer from "./Footer/Footer";
 import { useState, useEffect } from "react";
-import { colorPresets, segmentBoundaries } from "./utils/colorPresets";
+import {
+  colorPresets,
+  segmentBoundaries,
+  type ColorPreset,
+} from "./utils/colorPresets";
 import { interpolateRGB } from "./utils/colorUtils";
 
 function App() {
@@ -36,14 +40,16 @@ function App() {
     const currentPreset = colorPresets[segment];
     const nextPreset = colorPresets[nextSegment];
 
-    Object.keys(currentPreset).forEach((varName) => {
-      const interpolatedColor = interpolateRGB(
-        currentPreset[varName],
-        nextPreset[varName],
-        factor,
-      );
-      document.documentElement.style.setProperty(varName, interpolatedColor);
-    });
+    (Object.keys(currentPreset) as Array<keyof ColorPreset>).forEach(
+      (varName) => {
+        const interpolatedColor = interpolateRGB(
+          currentPreset[varName],
+          nextPreset[varName],
+          factor,
+        );
+        document.documentElement.style.setProperty(varName, interpolatedColor);
+      },
+    );
   }, [sliderPercentage]);
 
   return (
