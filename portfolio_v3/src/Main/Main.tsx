@@ -48,6 +48,8 @@ function Main() {
           <h3>Skills</h3>
           <ul className="skill-list">
             <li className="skill">TypeScript</li>
+            <li className="skill">HTML</li>
+            <li className="skill">CSS</li>
             <li className="skill">React</li>
             <li className="skill">Vue.js</li>
             <li className="skill">Svelte</li>
@@ -69,6 +71,7 @@ function Main() {
               <span className="text-tiny">2025 - present</span>
             </div>
             <p>Accessify SaaS</p>
+            <br></br>
             <ul className="styled-list">
               <li className="text-small">
                 Collaborated with a multidisciplinary team of developers,
@@ -89,6 +92,15 @@ function Main() {
                 Served as Product Owner for Accessify’s lead generation
                 platform.
               </li>
+              <br></br>
+            </ul>
+            <ul className="skill-list">
+              <li className="skill">ColdFusion</li>
+              <li className="skill">JavaScript</li>
+              <li className="skill">HTML</li>
+              <li className="skill">CSS</li>
+              <li className="skill">Figma</li>
+              <li className="skill">Apache Solr</li>
             </ul>
           </div>
         </div>
@@ -97,20 +109,57 @@ function Main() {
           <ul className="tile-list">
             <li>
               <div className="tile">
-                <h4>Master's Work & Organizational Psychology</h4>
+                <h4>Courses</h4>
+                <ul className="styled-list">
+                  <li>
+                    <div className="function-wrapper">
+                      <h4>CS50: Introduction to Computer Science</h4>
+                      <span className="text-tiny">2021</span>
+                    </div>
+                    <p>HarvardX</p>
+                  </li>
+                  <li>
+                    <div className="function-wrapper">
+                      <h4>CS50: Introduction to Programming with Python</h4>
+                      <span className="text-tiny">2022</span>
+                    </div>
+                    <p>HarvardX</p>
+                  </li>
+                  <li>
+                    <div className="function-wrapper">
+                      <h4>CS50: Web Programming with Python and JavaScript</h4>
+                      <span className="text-tiny">2022</span>
+                    </div>
+                    <p>HarvardX</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div className="tile">
+                <div className="function-wrapper">
+                  <h4>Master's Work & Organizational Psychology</h4>
+                  <span className="text-tiny">2014 - 2016</span>
+                </div>
                 <p>Utrecht University</p>
                 <p></p>
               </div>
             </li>
             <li>
               <div className="tile">
-                <h4>Bachelor's Work & Organizational Psychology</h4>
+                <div className="function-wrapper">
+                  <h4>Bachelor's Work & Organizational Psychology</h4>
+                  <span className="text-tiny">2009 - 2013</span>
+                </div>
                 <p>Utrecht University</p>
               </div>
             </li>
             <li>
               <div className="tile">
-                <h4>Bachelors's Clinical & Health Psychology</h4>
+                <div className="function-wrapper">
+                  <h4>Bachelors's Clinical & Health Psychology</h4>
+                  <span className="text-tiny">2009 - 2013</span>
+                </div>
                 <p>Utrecht University</p>
               </div>
             </li>
