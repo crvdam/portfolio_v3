@@ -17,26 +17,25 @@ function Main() {
         <h2 className="section-title">Projects</h2>
         <ul className="tile-list">
           <li className="tile project">
-            <h3>Recipes</h3>
-            <p className="text-small">
-              A recipe website built with Next.js that fetches and displays meal
-              data from TheMealDB API.
-            </p>
+            <a href="https://movies.casparvandam.com">
+              <h3>Movies</h3>
+
+              <ul className="skill-list">
+                <li className="skill light text-tiny">Vue</li>
+                <li className="skill light text-tiny">Pinia</li>
+                <li className="skill light text-tiny">TMDB api</li>
+              </ul>
+            </a>
           </li>
           <li className="tile project">
-            <h3>Portrait</h3>
-            <p className="text-small">
-              A guessing game built with Svelte where players identify blurred
-              celebrity portraits using data from the TMDb API.
-            </p>
-          </li>
-          <li className="tile project">
-            <h3>Real-estate</h3>
-            <p className="text-small">
-              A real estate front-end built with Vue that allows users to
-              search, filter, create, and edit property listings, using Pinia
-              for state management and Vue Router for navigation.
-            </p>
+            <a href="https://celebrity.casparvandam.com">
+              <h3>Celebrity</h3>
+
+              <ul className="skill-list">
+                <li className="skill light text-tiny">Svelte</li>
+                <li className="skill light text-tiny">TMDB api</li>
+              </ul>
+            </a>
           </li>
         </ul>
       </section>
@@ -95,12 +94,12 @@ function Main() {
               <br></br>
             </ul>
             <ul className="skill-list">
-              <li className="skill">ColdFusion</li>
-              <li className="skill">JavaScript</li>
-              <li className="skill">HTML</li>
-              <li className="skill">CSS</li>
-              <li className="skill">Figma</li>
-              <li className="skill">Apache Solr</li>
+              <li className="skill light text-small">ColdFusion</li>
+              <li className="skill light text-small">JavaScript</li>
+              <li className="skill light text-small">HTML</li>
+              <li className="skill light text-small">CSS</li>
+              <li className="skill light text-small">Figma</li>
+              <li className="skill light text-small">Apache Solr</li>
             </ul>
           </div>
         </div>

@@ -82,3 +82,7 @@ button {
   background-color: unset;
   cursor: pointer;
 }
+
+a:visited {
+  color: inherit;
+}
