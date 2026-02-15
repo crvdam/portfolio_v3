@@ -8,6 +8,7 @@ header {
   background-color: var(--bg-secondary);
   box-shadow: var(--box-shadow);
   border-bottom: 1px solid var(--clr-border);
+  z-index: 1000;
 }
 
 .spacer {

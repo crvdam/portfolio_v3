@@ -42,7 +42,7 @@ h2 {
 h3 {
   font-size: 1.25rem;
   margin-bottom: 1.5rem;
-  color: var(--clr-text);
+  color: var(--clr-header);
 }
 
 h4 {
@@ -66,6 +66,7 @@ ul {
 
 .text-tiny {
   font-size: 11px;
+  white-space: nowrap;
 }
 
 .styled-list {
