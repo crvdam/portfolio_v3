@@ -7,12 +7,19 @@ interface SliderProps {
 
 function Slider({ onValueChange }: SliderProps) {
   const circleRef = useRef<HTMLDivElement>(null);
-  const [controlPos, setControlPos] = useState<{
-    left: string | number;
-    top: string | number;
-  }>({
-    left: "50%",
-    top: 0,
+  const [controlPos, setControlPos] = useState(() => {
+    const isDarkMode = window.matchMedia(
+      "(prefers-color-scheme: dark)",
+    ).matches;
+    return isDarkMode
+      ? {
+          left: "100%",
+          top: "50%",
+        }
+      : {
+          left: "0%",
+          top: "50%",
+        };
   });
 
   const moveControl = (event: globalThis.MouseEvent) => {
@@ -42,9 +49,12 @@ function Slider({ onValueChange }: SliderProps) {
       y: radius * Math.sin(theta),
     };
 
+    const leftPercent = ((radius + control.x) / (radius * 2)) * 100;
+    const topPercent = ((radius + control.y) / (radius * 2)) * 100;
+
     setControlPos({
-      left: radius + control.x,
-      top: radius + control.y,
+      left: `${leftPercent}%`,
+      top: `${topPercent}%`,
     });
 
     let adjusted = (theta + Math.PI / 2 + 2 * Math.PI) % (2 * Math.PI);

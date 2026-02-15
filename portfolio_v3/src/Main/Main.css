@@ -8,6 +8,13 @@ section {
   margin-bottom: 4rem;
 }
 
+.separator {
+  height: 1px;
+  width: 60%;
+  margin: 6rem auto;
+  background: var(--clr-text);
+}
+
 .tile {
   padding: 1rem;
   border-radius: var(--border-radius);
@@ -72,6 +79,7 @@ h1 {
     svg {
       height: 100%;
       width: 100%;
+      border-radius: 5px;
     }
 
     &:hover {

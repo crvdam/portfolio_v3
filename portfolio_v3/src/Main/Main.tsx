@@ -12,7 +12,7 @@ function Main() {
         </div>
         <Socials />
       </section>
-
+      <div className="separator"></div>
       <section>
         <h2 className="section-title">Projects</h2>
         <ul className="tile-list projects">
@@ -73,7 +73,7 @@ function Main() {
           </li>
         </ul>
       </section>
-
+      <div className="separator"></div>
       <section>
         <h2>Resume</h2>
 
@@ -199,6 +199,8 @@ function Main() {
           </ul>
         </div>
       </section>
+
+      <div className="separator"></div>
     </main>
   );
 }
