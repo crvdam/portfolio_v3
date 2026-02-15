@@ -1,15 +1,26 @@
 .socials {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   align-items: center;
 
   svg {
-    height: 24px;
-    width: 24px;
+    height: 100%;
+    width: 100%;
   }
 
-  svg.shrink {
+  a {
+    height: 24px;
+    width: 24px;
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 5px;
+  }
+
+  a.shrink {
     height: 20px;
+  }
+
+  a:hover {
+    transform: scale(1.2);
   }
 
   svg path {
