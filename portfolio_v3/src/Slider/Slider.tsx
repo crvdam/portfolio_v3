@@ -1,5 +1,5 @@
 import "./Slider.css";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 interface SliderProps {
   onValueChange: (percentage: number) => void;

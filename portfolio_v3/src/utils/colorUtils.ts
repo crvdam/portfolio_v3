@@ -1,15 +1,12 @@
 export const hslToRgb = (h: number, s: number, l: number) => {
   s = s / 100;
   l = l / 100;
-
   const c = (1 - Math.abs(2 * l - 1)) * s;
   const x = c * (1 - Math.abs(((h / 60) % 2) - 1));
   const m = l - c / 2;
-
   let r = 0,
     g = 0,
     b = 0;
-
   if (0 <= h && h < 60) {
     r = c;
     g = x;
@@ -35,7 +32,6 @@ export const hslToRgb = (h: number, s: number, l: number) => {
     g = 0;
     b = x;
   }
-
   return {
     r: Math.round((r + m) * 255),
     g: Math.round((g + m) * 255),
@@ -47,19 +43,16 @@ export const rgbToHsl = (r: number, g: number, b: number) => {
   r /= 255;
   g /= 255;
   b /= 255;
-
   const max = Math.max(r, g, b);
   const min = Math.min(r, g, b);
-  let h,
-    s,
-    l = (max + min) / 2;
-
+  let h = 0; // ← Initialize h to 0
+  let s;
+  let l = (max + min) / 2;
   if (max === min) {
     h = s = 0;
   } else {
     const d = max - min;
     s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
-
     switch (max) {
       case r:
         h = ((g - b) / d + (g < b ? 6 : 0)) / 6;
@@ -73,7 +66,6 @@ export const rgbToHsl = (r: number, g: number, b: number) => {
     }
     h *= 360;
   }
-
   return { h, s: s * 100, l: l * 100 };
 };
 
@@ -98,14 +90,11 @@ export const interpolateRGB = (
 ) => {
   const hsl1 = parseHSL(color1);
   const hsl2 = parseHSL(color2);
-
   const rgb1 = hslToRgb(hsl1.h, hsl1.s, hsl1.l);
   const rgb2 = hslToRgb(hsl2.h, hsl2.s, hsl2.l);
-
   const r = Math.round(rgb1.r + (rgb2.r - rgb1.r) * factor);
   const g = Math.round(rgb1.g + (rgb2.g - rgb1.g) * factor);
   const b = Math.round(rgb1.b + (rgb2.b - rgb1.b) * factor);
-
   const hsl = rgbToHsl(r, g, b);
   return `hsl(${hsl.h}, ${hsl.s}%, ${hsl.l}%)`;
 };
