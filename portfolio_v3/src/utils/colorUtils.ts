@@ -45,7 +45,7 @@ export const rgbToHsl = (r: number, g: number, b: number) => {
   b /= 255;
   const max = Math.max(r, g, b);
   const min = Math.min(r, g, b);
-  let h = 0; // ← Initialize h to 0
+  let h = 0; 
   let s;
   let l = (max + min) / 2;
   if (max === min) {

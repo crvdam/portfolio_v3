@@ -20,7 +20,7 @@ header {
   width: 120px;
   transform: translate(-5px, 100px);
   margin-right: 1rem;
-  background: var(--bg-secondary);
+  background: var(--bg-gradient-2);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   transform-origin: top right;
@@ -43,6 +43,7 @@ header {
 .colorchange-wrapper.minimized {
   border-radius: unset;
   box-shadow: unset;
+  background: unset;
   transform: scale(0.25) translate(0, 170px);
   transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 

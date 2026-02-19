@@ -17,10 +17,11 @@
 
 .slider-control {
   position: absolute;
-  width: 14px;
-  height: 14px;
+  width: 12px;
+  height: 12px;
   cursor: pointer;
-  background: black;
+  background: rgb(160, 160, 160);
+  border: 3px solid rgb(145, 145, 145);
   border-radius: 50%;
   transform: translate(-50%, -50%);
 }
