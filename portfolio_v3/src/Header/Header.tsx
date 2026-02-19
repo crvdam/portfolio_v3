@@ -1,6 +1,6 @@
 import "./Header.css";
 import Slider from "../Slider/Slider";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 interface HeaderProps {
   onSliderChange: (percentage: number) => void;
@@ -8,11 +8,34 @@ interface HeaderProps {
 
 function Header({ onSliderChange }: HeaderProps) {
   const [showSlider, setShowSlider] = useState(false);
+  const wrapperRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleOutsideClick = (event: MouseEvent | TouchEvent) => {
+      if (
+        wrapperRef.current &&
+        !wrapperRef.current.contains(event.target as Node)
+      ) {
+        setShowSlider(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleOutsideClick);
+    document.addEventListener("touchstart", handleOutsideClick);
+
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+      document.removeEventListener("touchstart", handleOutsideClick);
+    };
+  }, []);
 
   return (
     <>
       <header>
-        <div className={`colorchange-wrapper ${showSlider ? "" : "minimized"}`}>
+        <div
+          ref={wrapperRef}
+          className={`colorchange-wrapper ${showSlider ? "" : "minimized"}`}
+        >
           <div className="button-wrapper">
             <button
               className="button-show-slider"
@@ -39,13 +62,11 @@ function Header({ onSliderChange }: HeaderProps) {
                 </svg>
             </button>
           </div>
-
           <div className="slider-wrapper">
             <Slider onValueChange={onSliderChange} />
           </div>
         </div>
       </header>
-
       <div className="spacer"></div>
     </>
   );

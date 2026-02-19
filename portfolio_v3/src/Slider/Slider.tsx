@@ -12,64 +12,60 @@ function Slider({ onValueChange }: SliderProps) {
       "(prefers-color-scheme: dark)",
     ).matches;
     return isDarkMode
-      ? {
-          left: "100%",
-          top: "50%",
-        }
-      : {
-          left: "0%",
-          top: "50%",
-        };
+      ? { left: "100%", top: "50%" }
+      : { left: "0%", top: "50%" };
   });
 
-  const moveControl = (event: globalThis.MouseEvent) => {
+  const moveControlToPoint = (clientX: number, clientY: number) => {
     if (!circleRef.current) return;
 
     const rect = circleRef.current.getBoundingClientRect();
     const radius = rect.width / 2;
-    const centerPos = {
-      x: rect.left + rect.width / 2,
-      y: rect.top + rect.height / 2,
-    };
 
-    const mousePos = {
-      x: event.clientX,
-      y: event.clientY,
-    };
-
-    const mouseRel = {
-      x: mousePos.x - centerPos.x,
-      y: mousePos.y - centerPos.y,
-    };
-
-    let theta = Math.atan2(mouseRel.y, mouseRel.x);
-
-    const control = {
-      x: radius * Math.cos(theta),
-      y: radius * Math.sin(theta),
-    };
-
-    const leftPercent = ((radius + control.x) / (radius * 2)) * 100;
-    const topPercent = ((radius + control.y) / (radius * 2)) * 100;
+    const theta = Math.atan2(
+      clientY - (rect.top + radius),
+      clientX - (rect.left + radius),
+    );
 
     setControlPos({
-      left: `${leftPercent}%`,
-      top: `${topPercent}%`,
+      left: `${((radius + radius * Math.cos(theta)) / (radius * 2)) * 100}%`,
+      top: `${((radius + radius * Math.sin(theta)) / (radius * 2)) * 100}%`,
     });
 
-    let adjusted = (theta + Math.PI / 2 + 2 * Math.PI) % (2 * Math.PI);
-    const newPercentage = (adjusted / (2 * Math.PI)) * 100;
-    onValueChange(newPercentage);
+    const adjusted = (theta + Math.PI / 2 + 2 * Math.PI) % (2 * Math.PI);
+    onValueChange((adjusted / (2 * Math.PI)) * 100);
   };
 
-  const onMouseDown = () => {
-    window.addEventListener("mousemove", moveControl);
-    window.addEventListener("mouseup", onMouseUp);
+  const onMouseMove = (event: globalThis.MouseEvent) => {
+    moveControlToPoint(event.clientX, event.clientY);
+  };
+
+  const onTouchMove = (event: TouchEvent) => {
+    event.preventDefault();
+    moveControlToPoint(event.touches[0].clientX, event.touches[0].clientY);
   };
 
   const onMouseUp = () => {
-    window.removeEventListener("mousemove", moveControl);
+    window.removeEventListener("mousemove", onMouseMove);
     window.removeEventListener("mouseup", onMouseUp);
+  };
+
+  const onMouseDown = () => {
+    window.addEventListener("mousemove", onMouseMove);
+    window.addEventListener("mouseup", onMouseUp);
+  };
+
+  const onTouchStart = (event: React.TouchEvent) => {
+    event.preventDefault();
+    circleRef.current?.addEventListener("touchmove", onTouchMove, {
+      passive: false,
+    });
+    window.addEventListener("touchend", onTouchEnd);
+  };
+
+  const onTouchEnd = () => {
+    circleRef.current?.removeEventListener("touchmove", onTouchMove);
+    window.removeEventListener("touchend", onTouchEnd);
   };
 
   return (
@@ -79,6 +75,7 @@ function Slider({ onValueChange }: SliderProps) {
           className="slider-control"
           style={{ left: controlPos.left, top: controlPos.top }}
           onMouseDown={onMouseDown}
+          onTouchStart={onTouchStart}
         ></div>
       </div>
     </>
