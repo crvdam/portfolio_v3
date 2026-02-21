@@ -156,12 +156,12 @@ function Main() {
               <br></br>
             </ul>
             <ul className="skill-list">
-              <li className="skill light text-small">ColdFusion</li>
-              <li className="skill light text-small">JavaScript</li>
-              <li className="skill light text-small">HTML</li>
-              <li className="skill light text-small">CSS</li>
-              <li className="skill light text-small">Figma</li>
-              <li className="skill light text-small">Apache Solr</li>
+              <li className="skill light text-tiny">ColdFusion</li>
+              <li className="skill light text-tiny">JavaScript</li>
+              <li className="skill light text-tiny">HTML</li>
+              <li className="skill light text-tiny">CSS</li>
+              <li className="skill light text-tiny">Figma</li>
+              <li className="skill light text-tiny">Apache Solr</li>
             </ul>
           </div>
         </div>
@@ -174,24 +174,30 @@ function Main() {
                 <ul className="styled-list">
                   <li>
                     <div className="function-wrapper">
-                      <h4>CS50: Introduction to Computer Science</h4>
+                      <p className="text-small">
+                        CS50: Introduction to Computer Science
+                      </p>
                       <span className="text-tiny">2021</span>
                     </div>
-                    <p>HarvardX</p>
+                    <p className="text-small">HarvardX</p>
                   </li>
                   <li>
                     <div className="function-wrapper">
-                      <h4>CS50: Introduction to Programming with Python</h4>
+                      <p className="text-small">
+                        CS50: Introduction to Programming with Python
+                      </p>
                       <span className="text-tiny">2022</span>
                     </div>
-                    <p>HarvardX</p>
+                    <p className="text-small">HarvardX</p>
                   </li>
                   <li>
                     <div className="function-wrapper">
-                      <h4>CS50: Web Programming with Python and JavaScript</h4>
+                      <p className="text-small">
+                        CS50: Web Programming with Python and JavaScript
+                      </p>
                       <span className="text-tiny">2022</span>
                     </div>
-                    <p>HarvardX</p>
+                    <p className="text-small">HarvardX</p>
                   </li>
                 </ul>
               </div>
@@ -202,7 +208,7 @@ function Main() {
                   <h4>Master's Work & Organizational Psychology</h4>
                   <span className="text-tiny">2014 - 2016</span>
                 </div>
-                <p>Utrecht University</p>
+                <p className="text-small">Utrecht University</p>
                 <p></p>
               </div>
             </li>
@@ -212,7 +218,7 @@ function Main() {
                   <h4>Bachelor's Work & Organizational Psychology</h4>
                   <span className="text-tiny">2009 - 2013</span>
                 </div>
-                <p>Utrecht University</p>
+                <p className="text-small">Utrecht University</p>
               </div>
             </li>
             <li>
@@ -221,7 +227,7 @@ function Main() {
                   <h4>Bachelors's Clinical & Health Psychology</h4>
                   <span className="text-tiny">2009 - 2013</span>
                 </div>
-                <p>Utrecht University</p>
+                <p className="text-small">Utrecht University</p>
               </div>
             </li>
           </ul>
