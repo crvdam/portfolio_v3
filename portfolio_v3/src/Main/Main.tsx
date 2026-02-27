@@ -136,21 +136,21 @@ function Main() {
             <ul className="styled-list">
               <li className="text-small">
                 Collaborated with a multidisciplinary team of developers,
-                designers, and a product owner on a SaaS product the facilitates
-                online platforms for B2B companies.
+                designers, and a product owner on a SaaS product used to build
+                online platforms for B2B clients.
               </li>
               <li className="text-small">
-                Implemented automatic end-to-end form testing with Playwright.
+                Implemented automated end-to-end tests with Playwright.
               </li>
               <li className="text-small">
-                Monitored and optimized performance according to Core Web
-                Vitals.
+                Monitored and optimized Core Web Vitals for client's online
+                platforms.
               </li>
               <li className="text-small">
                 Developed templates and components based on Figma wireframes.
               </li>
               <li className="text-small">
-                Served as Product Owner for Accessify’s lead generation
+                Served as product owner for Accessify’s lead generation
                 platform.
               </li>
               <br></br>
