@@ -9,9 +9,9 @@ export type ColorPreset = {
 
 export const colorPresets: ColorPreset[] = [
   {
-    "--bg-gradient-1": "rgb(210, 224, 238)",
-    "--bg-gradient-2": "rgb(218, 182, 77)",
-    "--bg-gradient-3": "rgb(218, 88, 34)",
+    "--bg-gradient-1": "rgb(246, 208, 98)",
+    "--bg-gradient-2": "rgb(229, 122, 76)",
+    "--bg-gradient-3": "rgb(253, 80, 61)",
     "--bg-secondary": "rgb(255, 242, 209)",
     "--clr-header": "rgb(20, 8, 0)",
     "--clr-text": "rgb(91, 91, 89)",
