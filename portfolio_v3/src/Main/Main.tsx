@@ -1,5 +1,8 @@
 import "./Main.css";
 import Socials from "../Socials/Socials";
+import GlobeIcon from "../Icons/GlobeIcon";
+import GitHubIcon from "../Icons/GitHubIcon";
+import MailIcon from "../Icons/MailIcon";
 
 function Main() {
   return (
@@ -17,87 +20,63 @@ function Main() {
         <h2 className="section-title">Projects</h2>
         <ul className="tile-list projects">
           <li className="tile project">
-            <a href="https://movies.casparvandam.com">
-              <div className="project-title-wrapper">
-                <h3>Movies</h3>
-
-                <a
-                  className="github-link"
-                  href="https://github.com/crvdam/moviedb"
-                >
-                  <svg
-                    fill="#000000"
-                    width="800px"
-                    height="800px"
-                    viewBox="0.08299999684095383 1.6660000085830688 15.833999633789062 15.833999633789062"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M15.917 1.666V17.5h-5.15c-.424 0-.557-.238-.557-.455 0-.266.01-1.141.01-2.226a1.935 1.935 0 0 0-.552-1.502c1.808-.202 3.706-.887 3.706-4.005a3.134 3.134 0 0 0-.834-2.177 2.914 2.914 0 0 0-.081-2.147s-.68-.218-2.23.832a7.684 7.684 0 0 0-4.063 0c-1.55-1.05-2.23-.832-2.23-.832a2.918 2.918 0 0 0-.08 2.147 3.142 3.142 0 0 0-.835 2.177c0 3.11 1.894 3.806 3.696 4.011a1.737 1.737 0 0 0-.516 1.084 1.726 1.726 0 0 1-2.361-.674 1.706 1.706 0 0 0-1.243-.836s-.793-.01-.056.494a2.145 2.145 0 0 1 .9 1.187s.478 1.578 2.735 1.088c.004.676.01 1.186.01 1.38 0 .214-.147.454-.553.454H.083V1.666z"></path>{" "}
-                  </svg>
-                </a>
-              </div>
-
-              <ul className="skill-list">
-                <li className="skill light text-tiny">Vue.js</li>
-                <li className="skill light text-tiny">Pinia</li>
-                <li className="skill light text-tiny">TMDB api</li>
-              </ul>
-            </a>
+            <div className="project-title-wrapper">
+              <h3>Movies database front-end</h3>
+              <a className="icon-link" href="https://movies.casparvandam.com">
+                <GlobeIcon />
+              </a>
+              <a className="icon-link" href="https://github.com/crvdam/moviedb">
+                <GitHubIcon />
+              </a>
+            </div>
+            <ul className="skill-list">
+              <li className="skill light text-tiny">Vue.js</li>
+              <li className="skill light text-tiny">Pinia</li>
+              <li className="skill light text-tiny">TMDB api</li>
+            </ul>
           </li>
           <li className="tile project">
-            <a href="https://celebrity.casparvandam.com">
-              <div className="project-title-wrapper">
-                <h3>Celebrity</h3>
-
-                <a
-                  className="github-link"
-                  href="https://github.com/crvdam/celebrity"
-                >
-                  <svg
-                    fill="#000000"
-                    width="800px"
-                    height="800px"
-                    viewBox="0.08299999684095383 1.6660000085830688 15.833999633789062 15.833999633789062"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M15.917 1.666V17.5h-5.15c-.424 0-.557-.238-.557-.455 0-.266.01-1.141.01-2.226a1.935 1.935 0 0 0-.552-1.502c1.808-.202 3.706-.887 3.706-4.005a3.134 3.134 0 0 0-.834-2.177 2.914 2.914 0 0 0-.081-2.147s-.68-.218-2.23.832a7.684 7.684 0 0 0-4.063 0c-1.55-1.05-2.23-.832-2.23-.832a2.918 2.918 0 0 0-.08 2.147 3.142 3.142 0 0 0-.835 2.177c0 3.11 1.894 3.806 3.696 4.011a1.737 1.737 0 0 0-.516 1.084 1.726 1.726 0 0 1-2.361-.674 1.706 1.706 0 0 0-1.243-.836s-.793-.01-.056.494a2.145 2.145 0 0 1 .9 1.187s.478 1.578 2.735 1.088c.004.676.01 1.186.01 1.38 0 .214-.147.454-.553.454H.083V1.666z"></path>{" "}
-                  </svg>
-                </a>
-              </div>
-
-              <ul className="skill-list">
-                <li className="skill light text-tiny">Svelte</li>
-                <li className="skill light text-tiny">TMDB api</li>
-              </ul>
-            </a>
+            <div className="project-title-wrapper">
+              <h3>Celebrity guessing game</h3>
+              <a
+                className="icon-link"
+                href="https://celebrity.casparvandam.com"
+              >
+                <GlobeIcon />
+              </a>
+              <a
+                className="icon-link"
+                href="https://github.com/crvdam/celebrity"
+              >
+                <GitHubIcon />
+              </a>
+            </div>
+            <ul className="skill-list">
+              <li className="skill light text-tiny">Svelte</li>
+              <li className="skill light text-tiny">TMDB api</li>
+            </ul>
           </li>
           <li className="tile project">
-            <a href="https://realestate.casparvandam.com">
-              <div className="project-title-wrapper">
-                <h3>Real estate</h3>
-
-                <a
-                  className="github-link"
-                  href="https://github.com/crvdam/real-estate"
-                >
-                  <svg
-                    fill="#000000"
-                    width="800px"
-                    height="800px"
-                    viewBox="0.08299999684095383 1.6660000085830688 15.833999633789062 15.833999633789062"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M15.917 1.666V17.5h-5.15c-.424 0-.557-.238-.557-.455 0-.266.01-1.141.01-2.226a1.935 1.935 0 0 0-.552-1.502c1.808-.202 3.706-.887 3.706-4.005a3.134 3.134 0 0 0-.834-2.177 2.914 2.914 0 0 0-.081-2.147s-.68-.218-2.23.832a7.684 7.684 0 0 0-4.063 0c-1.55-1.05-2.23-.832-2.23-.832a2.918 2.918 0 0 0-.08 2.147 3.142 3.142 0 0 0-.835 2.177c0 3.11 1.894 3.806 3.696 4.011a1.737 1.737 0 0 0-.516 1.084 1.726 1.726 0 0 1-2.361-.674 1.706 1.706 0 0 0-1.243-.836s-.793-.01-.056.494a2.145 2.145 0 0 1 .9 1.187s.478 1.578 2.735 1.088c.004.676.01 1.186.01 1.38 0 .214-.147.454-.553.454H.083V1.666z"></path>{" "}
-                  </svg>
-                </a>
-              </div>
-
-              <ul className="skill-list">
-                <li className="skill light text-tiny">Vue.js</li>
-                <li className="skill light text-tiny">Pinia</li>
-                <li className="skill light text-tiny">Vue Router</li>
-              </ul>
-            </a>
+            <div className="project-title-wrapper">
+              <h3>Real estate database front-end</h3>
+              <a
+                className="icon-link"
+                href="https://realestate.casparvandam.com"
+              >
+                <GlobeIcon />
+              </a>
+              <a
+                className="icon-link"
+                href="https://github.com/crvdam/real-estate"
+              >
+                <GitHubIcon />
+              </a>
+            </div>
+            <ul className="skill-list">
+              <li className="skill light text-tiny">Vue.js</li>
+              <li className="skill light text-tiny">Pinia</li>
+              <li className="skill light text-tiny">Vue Router</li>
+            </ul>
           </li>
         </ul>
       </section>
@@ -150,7 +129,7 @@ function Main() {
                 Developed templates and components based on Figma wireframes.
               </li>
               <li className="text-small">
-                Served as product owner for Accessify’s lead generation
+                Served as product owner for Accessify's lead generation
                 platform.
               </li>
               <br></br>
