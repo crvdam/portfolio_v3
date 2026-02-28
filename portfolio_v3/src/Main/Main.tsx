@@ -2,7 +2,6 @@ import "./Main.css";
 import Socials from "../Socials/Socials";
 import GlobeIcon from "../Icons/GlobeIcon";
 import GitHubIcon from "../Icons/GitHubIcon";
-import MailIcon from "../Icons/MailIcon";
 
 function Main() {
   return (
@@ -17,9 +16,9 @@ function Main() {
       </section>
       <div className="separator"></div>
       <section>
-        <h2 className="section-title">Projects</h2>
+        <h2 className="section-title fade-in-on-scroll">Projects</h2>
         <ul className="tile-list projects">
-          <li className="tile project">
+          <li className="tile project fade-in-on-scroll">
             <div className="project-title-wrapper">
               <h3>Movies database front-end</h3>
               <a className="icon-link" href="https://movies.casparvandam.com">
@@ -35,7 +34,7 @@ function Main() {
               <li className="skill light text-tiny">TMDB api</li>
             </ul>
           </li>
-          <li className="tile project">
+          <li className="tile project fade-in-on-scroll delay-1">
             <div className="project-title-wrapper">
               <h3>Celebrity guessing game</h3>
               <a
@@ -56,7 +55,7 @@ function Main() {
               <li className="skill light text-tiny">TMDB api</li>
             </ul>
           </li>
-          <li className="tile project">
+          <li className="tile project fade-in-on-scroll delay-2">
             <div className="project-title-wrapper">
               <h3>Real estate database front-end</h3>
               <a
@@ -84,9 +83,9 @@ function Main() {
       <section>
         <h2>Resume</h2>
 
-        <div className="resume-subcategory">
-          <h3>Skills</h3>
-          <ul className="skill-list">
+        <div className="resume-subcategory fade-in-on-scroll">
+          <h3 className="fade-in-on-scroll">Skills</h3>
+          <ul className="skill-list fade-in-on-scroll">
             <li className="skill">TypeScript</li>
             <li className="skill">HTML</li>
             <li className="skill">CSS</li>
@@ -104,8 +103,8 @@ function Main() {
         </div>
 
         <div className="resume-subcategory">
-          <h3>Experience</h3>
-          <div className="experience-item tile">
+          <h3 className="fade-in-on-scroll">Experience</h3>
+          <div className="experience-item tile fade-in-on-scroll">
             <div className="function-wrapper">
               <h4 className="function-title">Junior Front-end Developer</h4>
               <span className="text-tiny">2025 - present</span>
@@ -145,10 +144,10 @@ function Main() {
           </div>
         </div>
         <div className="resume-subcategory">
-          <h3>Education</h3>
-          <ul className="tile-list">
+          <h3 className="fade-in-on-scroll">Education</h3>
+          <ul className="tile-list ">
             <li>
-              <div className="tile">
+              <div className="tile fade-in-on-scroll">
                 <h4>Courses</h4>
                 <ul className="styled-list">
                   <li>
@@ -182,7 +181,7 @@ function Main() {
               </div>
             </li>
             <li>
-              <div className="tile">
+              <div className="tile fade-in-on-scroll">
                 <div className="function-wrapper">
                   <h4>Master's Work & Organizational Psychology</h4>
                   <span className="text-tiny">2014 - 2016</span>
@@ -192,7 +191,7 @@ function Main() {
               </div>
             </li>
             <li>
-              <div className="tile">
+              <div className="tile fade-in-on-scroll">
                 <div className="function-wrapper">
                   <h4>Bachelor's Work & Organizational Psychology</h4>
                   <span className="text-tiny">2009 - 2013</span>
@@ -201,7 +200,7 @@ function Main() {
               </div>
             </li>
             <li>
-              <div className="tile">
+              <div className="tile fade-in-on-scroll">
                 <div className="function-wrapper">
                   <h4>Bachelors's Clinical & Health Psychology</h4>
                   <span className="text-tiny">2009 - 2013</span>

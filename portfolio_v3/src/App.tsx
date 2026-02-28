@@ -9,6 +9,7 @@ import {
   type ColorPreset,
 } from "./utils/colorPresets";
 import { interpolateRGB } from "./utils/colorUtils";
+import { useFadeInOnScroll } from "./hooks/useFadeInOnScroll";
 
 function App() {
   const [sliderPercentage, setSliderPercentage] = useState(() => {
@@ -51,6 +52,8 @@ function App() {
       },
     );
   }, [sliderPercentage]);
+
+  useFadeInOnScroll();
 
   return (
     <>
