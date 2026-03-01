@@ -34,18 +34,21 @@ function Main() {
             projectLink="https://celebrity.casparvandam.com"
             githubLink="https://github.com/crvdam/celebrity"
             techStack={["Svelte", "TMDB api"]}
+            delay="0"
           />
           <Project
             title="Movie database"
             projectLink="https://movies.casparvandam.com"
             githubLink="https://github.com/crvdam/moviedb"
             techStack={["Vue", "Pinia", "TMDB api"]}
+            delay="1"
           />
           <Project
             title="Real estate database"
             projectLink="https://realestate.casparvandam.com"
             githubLink="https://github.com/crvdam/real-estate"
             techStack={["Vue", "Pinia", "Vue Router"]}
+            delay="2"
           />
         </ul>
       </section>

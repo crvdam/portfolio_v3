@@ -7,16 +7,17 @@ function Footer({
   projectLink,
   githubLink,
   techStack,
+  delay,
 }: {
   title: string;
   projectLink: string;
   githubLink: string;
   techStack: string[];
+  delay: string;
 }) {
   return (
-    <li className="tile project fade-in-on-scroll">
+    <li className={`tile project fade-in-on-scroll delay-${delay}`}>
       <h3>{title}</h3>
-
       <div>
         <a className="icon-link" href={projectLink}>
           <GlobeIcon />

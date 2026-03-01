@@ -99,10 +99,6 @@ h1 {
 }
 
 @media screen and (min-width: 1024px) {
-  .hero-text-wrapper {
-    max-width: 80%;
-  }
-
   .tile-list.projects {
     grid-template-columns: 1fr 1fr 1fr;
   }

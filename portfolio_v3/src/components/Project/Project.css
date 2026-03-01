@@ -5,7 +5,7 @@
 }
 
 .project {
-  min-height: 140px;
+  min-height: 160px;
 
   h3 {
     margin: 0;
@@ -33,7 +33,6 @@
     }
 
     svg path {
-      /* fill: var(--clr-text); */
       fill: var(--clr-cta);
     }
   }
