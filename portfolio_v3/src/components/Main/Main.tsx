@@ -8,7 +8,6 @@ function Main() {
     <main>
       <section className="introduction tile">
         <div className="introduction-wrapper">
-          <p className="text-tiny">Hi, my name is</p>
           <h1>Caspar van Dam</h1>
           <h3>Web developer</h3>
         </div>
