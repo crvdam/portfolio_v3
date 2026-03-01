@@ -28,15 +28,20 @@ h1 {
   margin-bottom: 0;
 }
 
-.introduction-wrapper {
-  flex-grow: 1;
+.hero-text-wrapper {
+  margin-bottom: 4rem;
 }
 
-.introduction {
-  min-height: 360px;
+.hero {
+  padding: 1rem;
+  min-height: 60dvh;
   padding-top: 2rem;
   display: flex;
   flex-direction: column;
+
+  h3 {
+    margin-bottom: 4rem;
+  }
 }
 
 .section-title {
@@ -94,6 +99,10 @@ h1 {
 }
 
 @media screen and (min-width: 1024px) {
+  .hero-text-wrapper {
+    max-width: 80%;
+  }
+
   .tile-list.projects {
     grid-template-columns: 1fr 1fr 1fr;
   }

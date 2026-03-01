@@ -85,6 +85,16 @@ button {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+  color: var(--clr-cta);
+  transition: 0.2s ease;
+}
+
+a:hover {
+  color: var(--clr-text);
+}
+
 a:visited {
   color: inherit;
 }

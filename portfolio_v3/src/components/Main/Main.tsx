@@ -5,14 +5,27 @@ import Project from "../Project/Project";
 function Main() {
   return (
     <main>
-      <section className="introduction tile">
-        <div className="introduction-wrapper">
+      <section className="hero">
+        <div className="hero-text-wrapper">
           <h1>Caspar van Dam</h1>
           <h3>Web developer</h3>
+          <p>
+            Hi, I'm Caspar, a fullstack developer based in Amsterdam. I'm
+            passionate about building websites that are fast, beautiful, and
+            effective. Whether it's crafting clean interfaces or architecting
+            solid backends, I care deeply about the craft and I'm always pushing
+            to get better at it. If you have a project in mind or just want to
+            talk,{" "}
+            <a href="mailto:casparvandam@gmail.com">
+              <strong>I'd love to hear from you.</strong>
+            </a>
+          </p>
         </div>
         <Socials />
       </section>
+
       <div className="separator"></div>
+
       <section>
         <h2 className="section-title fade-in-on-scroll">Projects</h2>
         <ul className="tile-list projects">
