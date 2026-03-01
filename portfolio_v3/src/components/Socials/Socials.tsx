@@ -12,7 +12,7 @@ function Socials() {
       <a className="shrink" href="https://www.linkedin.com/in/casparvandam/">
         <LinkedInIcon />
       </a>
-      <a href="mailto:casparvandam@hotmail.com">
+      <a href="mailto:casparvandam@gmail.com">
         <MailIcon />
       </a>
     </div>
