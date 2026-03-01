@@ -1,7 +1,6 @@
 import "./Main.css";
 import Socials from "../Socials/Socials";
-import GlobeIcon from "../Icons/GlobeIcon";
-import GitHubIcon from "../Icons/GitHubIcon";
+import Project from "../Project/Project";
 
 function Main() {
   return (
@@ -17,65 +16,24 @@ function Main() {
       <section>
         <h2 className="section-title fade-in-on-scroll">Projects</h2>
         <ul className="tile-list projects">
-          <li className="tile project fade-in-on-scroll">
-            <div className="project-title-wrapper">
-              <h3>Movies database front-end</h3>
-              <a className="icon-link" href="https://movies.casparvandam.com">
-                <GlobeIcon />
-              </a>
-              <a className="icon-link" href="https://github.com/crvdam/moviedb">
-                <GitHubIcon />
-              </a>
-            </div>
-            <ul className="skill-list">
-              <li className="skill light text-tiny">Vue.js</li>
-              <li className="skill light text-tiny">Pinia</li>
-              <li className="skill light text-tiny">TMDB api</li>
-            </ul>
-          </li>
-          <li className="tile project fade-in-on-scroll delay-1">
-            <div className="project-title-wrapper">
-              <h3>Celebrity guessing game</h3>
-              <a
-                className="icon-link"
-                href="https://celebrity.casparvandam.com"
-              >
-                <GlobeIcon />
-              </a>
-              <a
-                className="icon-link"
-                href="https://github.com/crvdam/celebrity"
-              >
-                <GitHubIcon />
-              </a>
-            </div>
-            <ul className="skill-list">
-              <li className="skill light text-tiny">Svelte</li>
-              <li className="skill light text-tiny">TMDB api</li>
-            </ul>
-          </li>
-          <li className="tile project fade-in-on-scroll delay-2">
-            <div className="project-title-wrapper">
-              <h3>Real estate database front-end</h3>
-              <a
-                className="icon-link"
-                href="https://realestate.casparvandam.com"
-              >
-                <GlobeIcon />
-              </a>
-              <a
-                className="icon-link"
-                href="https://github.com/crvdam/real-estate"
-              >
-                <GitHubIcon />
-              </a>
-            </div>
-            <ul className="skill-list">
-              <li className="skill light text-tiny">Vue.js</li>
-              <li className="skill light text-tiny">Pinia</li>
-              <li className="skill light text-tiny">Vue Router</li>
-            </ul>
-          </li>
+          <Project
+            title="Portrait game"
+            projectLink="https://celebrity.casparvandam.com"
+            githubLink="https://github.com/crvdam/celebrity"
+            techStack={["Svelte", "TMDB api"]}
+          />
+          <Project
+            title="Movie database"
+            projectLink="https://movies.casparvandam.com"
+            githubLink="https://github.com/crvdam/moviedb"
+            techStack={["Vue", "Pinia", "TMDB api"]}
+          />
+          <Project
+            title="Real estate database"
+            projectLink="https://realestate.casparvandam.com"
+            githubLink="https://github.com/crvdam/real-estate"
+            techStack={["Vue", "Pinia", "Vue Router"]}
+          />
         </ul>
       </section>
       <div className="separator"></div>

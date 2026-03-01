@@ -47,53 +47,6 @@ h1 {
   margin-bottom: 1rem;
 }
 
-.project {
-  min-height: 120px;
-
-  h3 {
-    margin: 0;
-  }
-
-  .icon-link {
-    position: static;
-    height: 24px;
-    width: 24px;
-    padding: 5px;
-    transition: transform 0.2s ease-out;
-
-    svg {
-      height: 100%;
-      width: 100%;
-      border-radius: 5px;
-    }
-
-    &:hover {
-      transform: scale(1.2);
-      transform-origin: center;
-    }
-
-    svg path {
-      fill: var(--clr-text);
-    }
-  }
-}
-
-.project-title-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-
-  h3 {
-    flex-grow: 1;
-  }
-}
-
-.project {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .resume-subcategory {
   margin-bottom: 3rem;
 }
