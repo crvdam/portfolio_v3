@@ -50,6 +50,23 @@ function Main() {
             techStack={["Vue", "Pinia", "Vue Router"]}
             delay="2"
           />
+          <Project
+            title="Messenger"
+            githubLink="https://github.com/crvdam/messenger"
+            techStack={[
+              "Django",
+              "Django Channels",
+              "WebSockets",
+              "JavaScript",
+            ]}
+            delay="0"
+          />
+          <Project
+            title="Terminal Hangman"
+            githubLink="https://github.com/crvdam/hangman"
+            techStack={["Python", "Merriam-Webster api"]}
+            delay="1"
+          />
         </ul>
       </section>
       <div className="separator"></div>
