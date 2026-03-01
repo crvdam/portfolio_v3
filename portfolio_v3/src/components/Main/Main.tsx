@@ -54,7 +54,7 @@ function Main() {
       </section>
       <div className="separator"></div>
       <section>
-        <h2>Resume</h2>
+        <h2 className="fade-in-on-scroll">Resume</h2>
 
         <div className="resume-subcategory fade-in-on-scroll">
           <h3 className="fade-in-on-scroll">Skills</h3>
