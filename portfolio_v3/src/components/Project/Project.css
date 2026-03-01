@@ -34,7 +34,7 @@
 
     svg path {
       /* fill: var(--clr-text); */
-      fill: rgb(0, 72, 255);
+      fill: var(--clr-cta);
     }
   }
 }

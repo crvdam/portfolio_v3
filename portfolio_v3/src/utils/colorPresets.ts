@@ -5,6 +5,7 @@ export type ColorPreset = {
   "--bg-secondary": string;
   "--clr-header": string;
   "--clr-text": string;
+  "--clr-cta": string;
 };
 
 export const colorPresets: ColorPreset[] = [
@@ -15,6 +16,7 @@ export const colorPresets: ColorPreset[] = [
     "--bg-secondary": "rgb(255, 242, 209)",
     "--clr-header": "rgb(20, 8, 0)",
     "--clr-text": "rgb(91, 91, 89)",
+    "--clr-cta": "rgb(255, 0, 0)"
   },
   {
     "--bg-gradient-1": "rgb(0, 0, 0)",
@@ -23,6 +25,7 @@ export const colorPresets: ColorPreset[] = [
     "--bg-secondary": "rgb(44, 49, 88)",
     "--clr-header": "rgb(247, 247, 247)",
     "--clr-text": "rgb(224, 224, 227)",
+    "--clr-cta": "rgb(0, 255, 136)"
   },
   {
     "--bg-gradient-1": "rgb(5, 11, 44)",
@@ -31,6 +34,7 @@ export const colorPresets: ColorPreset[] = [
     "--bg-secondary": "rgb(44, 49, 88)",
     "--clr-header": "rgb(232, 232, 232)",
     "--clr-text": "rgb(181, 177, 201)",
+     "--clr-cta": "rgb(255, 0, 221)"
   },
   {
     "--bg-gradient-1": "rgb(250, 255, 255)",
@@ -39,6 +43,7 @@ export const colorPresets: ColorPreset[] = [
     "--bg-secondary": "rgb(255, 255, 255)",
     "--clr-header": "rgb(20, 8, 0)",
     "--clr-text": "rgb(91, 91, 89)",
+     "--clr-cta": "rgb(0, 136, 255)"
   },
 ];
 

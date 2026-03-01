@@ -65,8 +65,8 @@ h1 {
 }
 
 .skill.light {
-  background-color: var(--clr-text);
-  color: var(--bg-secondary);
+  border: 1px solid var(--clr-text);
+  box-shadow: unset;
 }
 
 .function-wrapper {
