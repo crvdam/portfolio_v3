@@ -15,7 +15,7 @@ export const colorPresets: ColorPreset[] = [
     "--bg-gradient-3": "rgb(253, 80, 61)",
     "--bg-secondary": "rgb(255, 242, 209)",
     "--clr-header": "rgb(20, 8, 0)",
-    "--clr-text": "rgb(50, 50, 50)",
+    "--clr-text": "rgb(18, 18, 18)",
     "--clr-cta": "rgb(255, 0, 0)"
   },
   {
