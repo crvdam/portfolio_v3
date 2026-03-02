@@ -92,10 +92,10 @@ button {
 a {
   text-decoration: none;
   color: var(--clr-cta);
-  transition: 0.2s ease;
 }
 
 a:hover {
+  transition: 0.2s ease;
   color: var(--clr-text);
 }
 
