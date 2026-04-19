@@ -56,7 +56,7 @@ h1 {
 
 .featuredProjectInfoWrapper {
   display: flex;
-  gap: 1rem;
+  gap: 4rem;
   margin-bottom: 1rem;
   flex-wrap: wrap;
 
@@ -72,8 +72,8 @@ h1 {
     max-width: 100%;
     display: block;
     flex-shrink: 0;
-    width: 480px;
-    height: 270px;
+    height: 300px;
+    aspect-ratio: 16 / 9;
     
     img, video {
       border-radius: var(--border-radius);
@@ -84,6 +84,7 @@ h1 {
       left: 0;
       right: 0;
       bottom: 0;
+      object-fit:cover;
     }
     
     video {

@@ -52,7 +52,12 @@ function Main() {
                                 Supabase as the database and Prisma as ORM.
                             </p>
                             <div className="featuredProjectLinks">
-                                <a className="icon-link" href={""}>
+                                <a
+                                    className="icon-link"
+                                    href={
+                                        "https://kanban-f69c3zkp5-crvdams-projects.vercel.app/login"
+                                    }
+                                >
                                     <GlobeIcon />
                                 </a>
 
@@ -171,9 +176,9 @@ function Main() {
                     </ul>
                     <ul className="skill-list">
                         <h3>Other</h3>
+                        <li className="skill">Playwright</li>
                         <li className="skill">Figma</li>
                         <li className="skill">GitHub / GitHub Actions</li>
-                        <li className="skill">Playwright</li>
                     </ul>
                 </div>
 
