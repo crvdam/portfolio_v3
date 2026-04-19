@@ -55,7 +55,7 @@ function Main() {
                                 <a
                                     className="icon-link"
                                     href={
-                                        "https://kanban-f69c3zkp5-crvdams-projects.vercel.app/login"
+                                        "https://kanban-app-psi-three.vercel.app/"
                                     }
                                 >
                                     <GlobeIcon />
