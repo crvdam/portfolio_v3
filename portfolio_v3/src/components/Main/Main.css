@@ -34,7 +34,6 @@ h1 {
 
 .hero {
   padding: 1rem;
-  min-height: 60dvh;
   padding-top: 2rem;
   display: flex;
   flex-direction: column;
