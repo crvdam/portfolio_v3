@@ -44,12 +44,11 @@ function Main() {
                                 storage and optimistic updates.
                             </p>
                             <p>
-                                Cards and columns can be created, renamed,
-                                deleted and cards can be dragged between
-                                columns. UI updates immediately and rolls back
-                                automatically in the case of a server error.
-                                Authentication is handled via NextAuth with
-                                Supabase as the database and Prisma as ORM.
+                                A complete Kanban experience with draggable
+                                cards, editable columns, and full CRUD support.
+                                Optimistic updates allow for a smooth user
+                                experience with automatic rollback on server
+                                error.
                             </p>
                             <div className="featuredProjectLinks">
                                 <a
@@ -108,6 +107,10 @@ function Main() {
                 <ul className="tile-list projects">
                     <Project
                         title="Portrait game"
+                        features={[
+                            "Celebrity portrait guessing game with TMDB API",
+                            "Highscore in local storage",
+                        ]}
                         projectLink="https://celebrity.casparvandam.com"
                         githubLink="https://github.com/crvdam/celebrity"
                         techStack={["Svelte", "TMDB api"]}
@@ -115,6 +118,11 @@ function Main() {
                     />
                     <Project
                         title="Movie database"
+                        features={[
+                            "TMDB API",
+                            "Pinia state management",
+                            "Dynamic background colors based on hero image",
+                        ]}
                         projectLink="https://movies.casparvandam.com"
                         githubLink="https://github.com/crvdam/moviedb"
                         techStack={["Vue", "Pinia", "TMDB api"]}
@@ -122,6 +130,11 @@ function Main() {
                     />
                     <Project
                         title="Real estate database"
+                        features={[
+                            "Pinia state management",
+                            "View, sort, filter house listings",
+                            "Creating listings no longer available",
+                        ]}
                         projectLink="https://realestate.casparvandam.com"
                         githubLink="https://github.com/crvdam/real-estate"
                         techStack={["Vue", "Pinia", "Vue Router"]}
@@ -129,6 +142,11 @@ function Main() {
                     />
                     <Project
                         title="Messenger"
+                        features={[
+                            "Authentication and message storage with Django back-end",
+                            "Real-time communication with WebSockets (Django Channels)",
+                            "Vanilla JS front-end",
+                        ]}
                         githubLink="https://github.com/crvdam/messenger"
                         techStack={[
                             "Django",
@@ -140,6 +158,7 @@ function Main() {
                     />
                     <Project
                         title="Terminal Hangman"
+                        features={["Hangman CLI game with Merriam-Webster API"]}
                         githubLink="https://github.com/crvdam/hangman"
                         techStack={["Python", "Merriam-Webster api"]}
                         delay="1"

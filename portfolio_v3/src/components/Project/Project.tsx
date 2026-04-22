@@ -2,14 +2,16 @@ import GlobeIcon from "../Icons/GlobeIcon";
 import GitHubIcon from "../Icons/GitHubIcon";
 import "./Project.css";
 
-function Footer({
+function Project({
     title,
+    features,
     projectLink,
     githubLink,
     techStack,
     delay,
 }: {
     title: string;
+    features: string[] | undefined;
     projectLink?: string;
     githubLink: string;
     techStack: string[];
@@ -18,6 +20,15 @@ function Footer({
     return (
         <li className={`tile project fade-in-on-scroll delay-${delay}`}>
             <h3>{title}</h3>
+            {features && (
+                <ul className="features-list">
+                    {features.map((feature, index) => (
+                        <li className="text-tiny" key={index}>
+                            {feature}
+                        </li>
+                    ))}
+                </ul>
+            )}
             <div>
                 {projectLink && (
                     <a className="icon-link" href={projectLink} target="_blank">
@@ -38,4 +49,4 @@ function Footer({
     );
 }
 
-export default Footer;
+export default Project;
