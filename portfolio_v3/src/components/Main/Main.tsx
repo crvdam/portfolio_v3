@@ -54,6 +54,7 @@ function Main() {
                             <div className="featuredProjectLinks">
                                 <a
                                     className="icon-link"
+                                    target="_blank"
                                     href={
                                         "https://kanban-app-psi-three.vercel.app/"
                                     }
