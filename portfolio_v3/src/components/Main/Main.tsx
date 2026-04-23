@@ -197,6 +197,7 @@ function Main() {
                     <ul className="skill-list">
                         <h3>Other</h3>
                         <li className="skill">Playwright</li>
+                        <li className="skill">Jira</li>
                         <li className="skill">Figma</li>
                         <li className="skill">GitHub / GitHub Actions</li>
                     </ul>
