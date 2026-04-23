@@ -39,7 +39,7 @@
 
 .features-list {
   list-style: disclosure-closed;
-  padding-left: 0.5rem;
+  padding-left: 1rem;
   flex-grow: 1;
 
   li:not(last-child) {
