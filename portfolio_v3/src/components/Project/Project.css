@@ -38,7 +38,7 @@
 }
 
 .features-list {
-  list-style: disclosure-closed;
+  list-style: circle;
   padding-left: 1rem;
   flex-grow: 1;
 

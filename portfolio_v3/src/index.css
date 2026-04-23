@@ -75,7 +75,7 @@ ul {
 }
 
 .styled-list {
-  list-style: disclosure-closed;
+  list-style: circle;
   margin-left: 1.5rem;
 
   li {
