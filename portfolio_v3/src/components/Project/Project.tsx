@@ -1,6 +1,6 @@
-import GlobeIcon from "../Icons/GlobeIcon";
-import GitHubIcon from "../Icons/GitHubIcon";
-import "./Project.css";
+import GlobeIcon from '../Icons/GlobeIcon';
+import GitHubIcon from '../Icons/GitHubIcon';
+import './Project.css';
 
 function Project({
     title,
@@ -23,7 +23,7 @@ function Project({
             {features && (
                 <ul className="features-list">
                     {features.map((feature, index) => (
-                        <li className="text-tiny" key={index}>
+                        <li className="text-small" key={index}>
                             {feature}
                         </li>
                     ))}

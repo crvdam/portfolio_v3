@@ -1,10 +1,10 @@
-import "./Main.css";
-import Socials from "../Socials/Socials";
-import Project from "../Project/Project";
-import GlobeIcon from "../Icons/GlobeIcon";
-import GitHubIcon from "../Icons/GitHubIcon";
-import kanbanImage from "@/assets/kanban.webp";
-import kanbanVideo from "../../assets/kanban-video.webm";
+import './Main.css';
+import Socials from '../Socials/Socials';
+import Project from '../Project/Project';
+import GlobeIcon from '../Icons/GlobeIcon';
+import GitHubIcon from '../Icons/GitHubIcon';
+import kanbanImage from '@/assets/kanban.webp';
+import kanbanVideo from '../../assets/kanban-video.webm';
 
 function Main() {
     return (
@@ -20,7 +20,7 @@ function Main() {
                         crafting clean interfaces or architecting solid
                         backends, I care deeply about the craft and I'm always
                         pushing to get better at it. If you have a project in
-                        mind or just want to talk,{" "}
+                        mind or just want to talk,{' '}
                         <a href="mailto:casparvandam@gmail.com">
                             <strong>I'd love to hear from you.</strong>
                         </a>
@@ -39,23 +39,31 @@ function Main() {
                                 Featured project - Casban board
                             </h2>
                             <p>
-                                A full-stack project management board built with
-                                Next.js, featuring authentication, database
-                                storage and optimistic updates.
+                                Full-stack project management app that allows
+                                multiple projects per user, with editable
+                                columns and cards.
                             </p>
-                            <p>
-                                A complete Kanban experience with draggable
-                                cards, editable columns, and full CRUD support.
-                                Optimistic updates allow for a smooth user
-                                experience with automatic rollback on server
-                                error.
-                            </p>
+                            <ul className="features-list">
+                                <li className="text-small">
+                                    Optimistic UI updates with TanStack Query
+                                    for a smooth user experience
+                                </li>
+                                <li className="text-small">
+                                    Authentication with NextAuth
+                                </li>
+                                <li className="text-small">
+                                    Drag and drop functionality for cards
+                                </li>
+                                <li className="text-small">
+                                    Database storage on Supabase
+                                </li>
+                            </ul>
                             <div className="featuredProjectLinks">
                                 <a
                                     className="icon-link"
                                     target="_blank"
                                     href={
-                                        "https://kanban-app-psi-three.vercel.app/"
+                                        'https://kanban-app-psi-three.vercel.app/'
                                     }
                                 >
                                     <GlobeIcon />
@@ -65,7 +73,7 @@ function Main() {
                                     className="icon-link"
                                     target="_blank"
                                     href={
-                                        "https://github.com/crvdam/kanban-app"
+                                        'https://github.com/crvdam/kanban-app'
                                     }
                                 >
                                     <GitHubIcon />
@@ -80,6 +88,9 @@ function Main() {
                                 </li>
                                 <li className="skill light text-tiny">
                                     NextAuth
+                                </li>
+                                <li className="skill light text-tiny">
+                                    TanStack Query
                                 </li>
                                 <li className="skill light text-tiny">
                                     Prisma
@@ -108,59 +119,58 @@ function Main() {
                     <Project
                         title="Portrait game"
                         features={[
-                            "Celebrity portrait guessing game with TMDB API",
-                            "Highscore in local storage",
+                            'Celebrity portrait guessing game with TMDB API',
+                            'Highscore in local storage',
                         ]}
                         projectLink="https://celebrity.casparvandam.com"
                         githubLink="https://github.com/crvdam/celebrity"
-                        techStack={["Svelte", "TMDB api"]}
+                        techStack={['Svelte', 'TMDB api']}
                         delay="0"
                     />
                     <Project
                         title="Movie database"
                         features={[
-                            "TMDB API",
-                            "Pinia state management",
-                            "Dynamic background colors based on hero image",
+                            'TMDB API',
+                            'Pinia state management',
+                            'Dynamic background colors based on hero image',
                         ]}
                         projectLink="https://movies.casparvandam.com"
                         githubLink="https://github.com/crvdam/moviedb"
-                        techStack={["Vue", "Pinia", "TMDB api"]}
+                        techStack={['Vue', 'Pinia', 'TMDB api']}
                         delay="1"
                     />
                     <Project
                         title="Real estate database"
                         features={[
-                            "Pinia state management",
-                            "View, sort, filter house listings",
-                            "Creating listings no longer available",
+                            'Pinia state management',
+                            'View, sort, filter house listings',
+                            'Creating listings no longer available',
                         ]}
                         projectLink="https://realestate.casparvandam.com"
                         githubLink="https://github.com/crvdam/real-estate"
-                        techStack={["Vue", "Pinia", "Vue Router"]}
+                        techStack={['Vue', 'Pinia', 'Vue Router']}
                         delay="2"
                     />
                     <Project
                         title="Messenger"
                         features={[
-                            "Authentication and message storage with Django back-end",
-                            "Real-time communication with WebSockets (Django Channels)",
-                            "Vanilla JS front-end",
+                            'Authentication and message storage with Django back-end',
+                            'Real-time communication with WebSockets (Django Channels)',
                         ]}
                         githubLink="https://github.com/crvdam/messenger"
                         techStack={[
-                            "Django",
-                            "Django Channels",
-                            "WebSockets",
-                            "JavaScript",
+                            'Django',
+                            'Django Channels',
+                            'WebSockets',
+                            'JavaScript',
                         ]}
                         delay="0"
                     />
                     <Project
                         title="Terminal Hangman"
-                        features={["Hangman CLI game with Merriam-Webster API"]}
+                        features={['Hangman CLI game with Merriam-Webster API']}
                         githubLink="https://github.com/crvdam/hangman"
-                        techStack={["Python", "Merriam-Webster api"]}
+                        techStack={['Python', 'Merriam-Webster api']}
                         delay="1"
                     />
                 </ul>
@@ -170,36 +180,38 @@ function Main() {
                 <h2 className="fade-in-on-scroll">Resume</h2>
 
                 <div className="resume-subcategory fade-in-on-scroll skills">
+                    <h3>Languages</h3>
                     <ul className="skill-list">
-                        <h3>Languages</h3>
-                        <li className="skill">TypeScript</li>
-                        <li className="skill">Python</li>
-                        <li className="skill">HTML</li>
-                        <li className="skill">CSS</li>
-                        <li className="skill">ColdFusion</li>
+                        <li className="skill text-small">TypeScript</li>
+                        <li className="skill text-small">Python</li>
+                        <li className="skill text-small">ColdFusion</li>
                     </ul>
 
+                    <h3>Frameworks / libraries</h3>
                     <ul className="skill-list">
-                        <h3>Frameworks / libraries </h3>
-                        <li className="skill">Next.js</li>
-                        <li className="skill">React</li>
-                        <li className="skill">Vue.js</li>
-                        <li className="skill">Svelte</li>
-                        <li className="skill">Django</li>
+                        <li className="skill text-small">Next.js</li>
+                        <li className="skill text-small">React</li>
+                        <li className="skill text-small">Vue.js</li>
+                        <li className="skill text-small">Svelte</li>
+                        <li className="skill text-small">Django</li>
                     </ul>
 
+                    <h3>Database and search</h3>
                     <ul className="skill-list">
-                        <h3>Database</h3>
-                        <li className="skill">Supabase</li>
-                        <li className="skill">PostgreSQL</li>
-                        <li className="skill">Apache Solr / Lucene</li>
+                        <li className="skill text-small">Supabase</li>
+                        <li className="skill text-small">PostgreSQL</li>
+                        <li className="skill text-small">
+                            Apache Solr / Lucene
+                        </li>
                     </ul>
+                    <h3>Other</h3>
                     <ul className="skill-list">
-                        <h3>Other</h3>
-                        <li className="skill">Playwright</li>
-                        <li className="skill">Jira</li>
-                        <li className="skill">Figma</li>
-                        <li className="skill">GitHub / GitHub Actions</li>
+                        <li className="skill text-small">Playwright</li>
+                        <li className="skill text-small">Jira</li>
+                        <li className="skill text-small">Figma</li>
+                        <li className="skill text-small">
+                            GitHub / GitHub Actions
+                        </li>
                     </ul>
                 </div>
 
