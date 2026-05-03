@@ -32,30 +32,25 @@ function Main() {
             <div className="separator"></div>
 
             <section>
+                <h2 className="section-title fade-in-on-scroll">Projects</h2>
                 <div className="tile featuredProject fade-in-on-scroll">
                     <div className="featuredProjectInfoWrapper">
                         <div className="featuredProjectDescription">
-                            <h2 className="section-title">
-                                Featured project - Casban board
-                            </h2>
-                            <p>
-                                Full-stack project management app that allows
-                                multiple projects per user, with editable
-                                columns and cards.
-                            </p>
+                            <h2 className="section-title">Casban Board</h2>
+                            <p>Full-stack kanban board built with Next.js.</p>
                             <ul className="features-list">
                                 <li className="text-small">
-                                    Optimistic UI updates with TanStack Query
-                                    for a smooth user experience
+                                    Optimistic UI updates with automatic
+                                    rollback on server error
                                 </li>
                                 <li className="text-small">
                                     Authentication with NextAuth
                                 </li>
                                 <li className="text-small">
-                                    Drag and drop functionality for cards
+                                    Drag and drop with dnd-kit
                                 </li>
                                 <li className="text-small">
-                                    Database storage on Supabase
+                                    Supabase database storage
                                 </li>
                             </ul>
                             <div className="featuredProjectLinks">
@@ -84,7 +79,7 @@ function Main() {
                                     Next.js
                                 </li>
                                 <li className="skill light text-tiny">
-                                    Supabase / PostgreSQL
+                                    Supabase
                                 </li>
                                 <li className="skill light text-tiny">
                                     NextAuth
@@ -112,15 +107,12 @@ function Main() {
                         </div>
                     </div>
                 </div>
-                <h2 className="section-title fade-in-on-scroll">
-                    Other projects
-                </h2>
                 <ul className="tile-list projects">
                     <Project
                         title="Portrait game"
                         features={[
                             'Celebrity portrait guessing game with TMDB API',
-                            'Highscore in local storage',
+                            'Countdown timer and highscore in local storage',
                         ]}
                         projectLink="https://celebrity.casparvandam.com"
                         githubLink="https://github.com/crvdam/celebrity"
@@ -133,6 +125,7 @@ function Main() {
                             'TMDB API',
                             'Pinia state management',
                             'Dynamic background colors based on hero image',
+                            'Endless scroll',
                         ]}
                         projectLink="https://movies.casparvandam.com"
                         githubLink="https://github.com/crvdam/moviedb"
@@ -144,7 +137,7 @@ function Main() {
                         features={[
                             'Pinia state management',
                             'View, sort, filter house listings',
-                            'Creating listings no longer available',
+                            'Original API no langer available',
                         ]}
                         projectLink="https://realestate.casparvandam.com"
                         githubLink="https://github.com/crvdam/real-estate"
@@ -200,9 +193,7 @@ function Main() {
                     <ul className="skill-list">
                         <li className="skill text-small">Supabase</li>
                         <li className="skill text-small">PostgreSQL</li>
-                        <li className="skill text-small">
-                            Apache Solr / Lucene
-                        </li>
+                        <li className="skill text-small">Apache Solr</li>
                     </ul>
                     <h3>Other</h3>
                     <ul className="skill-list">
@@ -239,11 +230,11 @@ function Main() {
                             </li>
                             <li className="text-small">
                                 Monitored and optimized Core Web Vitals for
-                                client's online platforms.
+                                clients' online platforms.
                             </li>
                             <li className="text-small">
-                                Developed templates and components based on
-                                Figma wireframes.
+                                Developed web-apps and components based on Figma
+                                wireframes.
                             </li>
                             <li className="text-small">
                                 Served as product owner for Accessify's lead
@@ -258,8 +249,10 @@ function Main() {
                             <li className="skill light text-tiny">
                                 JavaScript
                             </li>
-                            <li className="skill light text-tiny">HTML</li>
-                            <li className="skill light text-tiny">CSS</li>
+                            <li className="skill light text-tiny">Jira</li>
+                            <li className="skill light text-tiny">
+                                Playwright
+                            </li>
                             <li className="skill light text-tiny">Figma</li>
                             <li className="skill light text-tiny">
                                 Apache Solr
