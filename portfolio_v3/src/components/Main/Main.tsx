@@ -36,7 +36,7 @@ function Main() {
                 <div className="tile featuredProject fade-in-on-scroll">
                     <div className="featuredProjectInfoWrapper">
                         <div className="featuredProjectDescription">
-                            <h2 className="section-title">Casban Board</h2>
+                            <h3 className="section-title">Casban Board</h3>
                             <p>Full-stack kanban board built with Next.js.</p>
                             <ul className="features-list">
                                 <li className="text-small">
@@ -266,44 +266,24 @@ function Main() {
                         <li>
                             <div className="tile fade-in-on-scroll">
                                 <h4>Courses</h4>
-                                <ul className="styled-list">
-                                    <li>
-                                        <div className="function-wrapper">
-                                            <p className="text-small">
-                                                CS50: Introduction to Computer
-                                                Science
-                                            </p>
-                                            <span className="text-tiny">
-                                                2021
-                                            </span>
-                                        </div>
+                                <div className="function-wrapper">
+                                    <div>
+                                        <p className="text-small">
+                                            CS50: Introduction to Computer
+                                            Science
+                                        </p>
+                                        <p className="text-small">
+                                            CS50: Introduction to Programming
+                                            with Python
+                                        </p>
+                                        <p className="text-small">
+                                            CS50: Web Programming with Python
+                                            and JavaScript
+                                        </p>
                                         <p className="text-small">HarvardX</p>
-                                    </li>
-                                    <li>
-                                        <div className="function-wrapper">
-                                            <p className="text-small">
-                                                CS50: Introduction to
-                                                Programming with Python
-                                            </p>
-                                            <span className="text-tiny">
-                                                2022
-                                            </span>
-                                        </div>
-                                        <p className="text-small">HarvardX</p>
-                                    </li>
-                                    <li>
-                                        <div className="function-wrapper">
-                                            <p className="text-small">
-                                                CS50: Web Programming with
-                                                Python and JavaScript
-                                            </p>
-                                            <span className="text-tiny">
-                                                2022
-                                            </span>
-                                        </div>
-                                        <p className="text-small">HarvardX</p>
-                                    </li>
-                                </ul>
+                                    </div>
+                                    <span className="text-tiny">2021</span>
+                                </div>
                             </div>
                         </li>
                         <li>

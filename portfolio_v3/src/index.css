@@ -1,137 +1,137 @@
 :root {
-  --bg-primary: #dee2e6;
-  --bg-gradient-1: #dee2e6;
-  --bg-gradient-2: #dee2e6;
-  --bg-gradient-3: #dee2e6;
-  --bg-secondary: #f8f9fa;
-  --clr-header: #212529;
-  --clr-text: #495057;
-  --clr-cta: #0062ff;
-  /* --clr-border: rgb(98, 98, 98); */
-  --border-radius: 10px;
-  --box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.1);
+    --bg-primary: #dee2e6;
+    --bg-gradient-1: #dee2e6;
+    --bg-gradient-2: #dee2e6;
+    --bg-gradient-3: #dee2e6;
+    --bg-secondary: #f8f9fa;
+    --clr-header: #212529;
+    --clr-text: #495057;
+    --clr-cta: #0062ff;
+    /* --clr-border: rgb(98, 98, 98); */
+    --border-radius: 10px;
+    --box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
 
-  background: linear-gradient(
-    70deg,
-    var(--bg-gradient-1) 40%,
-    var(--bg-gradient-2) 70%,
-    var(--bg-gradient-3) 100%
-  );
-  color: var(--clr-text);
+    background: linear-gradient(
+        70deg,
+        var(--bg-gradient-1) 40%,
+        var(--bg-gradient-2) 70%,
+        var(--bg-gradient-3) 100%
+    );
+    color: var(--clr-text);
 
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
+    font-family: 'Inter', sans-serif;
+    font-optical-sizing: auto;
 }
 
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 p {
-  line-height: 1.5rem;
+    line-height: 1.5rem;
 }
 
 h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: var(--clr-header);
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: var(--clr-header);
 }
 
 h2 {
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
-  color: var(--clr-header);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--clr-header);
 }
 
 h3 {
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
-  color: var(--clr-header);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--clr-header);
 }
 
 h4 {
-  font-size: 1rem;
-  margin-bottom: 0;
-  color: var(--clr-text);
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+    color: var(--clr-text);
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 .icon {
-  width: 24px;
-  height: 24px;
+    width: 24px;
+    height: 24px;
 }
 
 .text-small {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 .text-tiny {
-  font-size: 11px;
-  white-space: nowrap;
+    font-size: 11px;
+    white-space: nowrap;
 }
 
 .styled-list {
-  list-style: circle;
-  margin-left: 1.5rem;
+    list-style: circle;
+    margin-left: 1.5rem;
 
-  li {
-    margin: 10px 0;
-  }
+    li {
+        margin: 10px 0;
+    }
 }
 
 button {
-  border: none;
-  background-color: unset;
-  cursor: pointer;
+    border: none;
+    background-color: unset;
+    cursor: pointer;
 }
 
 a {
-  text-decoration: none;
-  color: var(--clr-cta);
+    text-decoration: none;
+    color: var(--clr-cta);
 }
 
 a:hover {
-  transition: 0.2s ease;
-  color: var(--clr-text);
+    transition: 0.2s ease;
+    color: var(--clr-text);
 }
 
 a:visited {
-  color: inherit;
+    color: inherit;
 }
 
 .fade-in-on-scroll {
-  opacity: 0;
-  transform: translatey(60px);
-  transition:
-    opacity 1.5s ease,
-    transform 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    opacity: 0;
+    transform: translatey(60px);
+    transition:
+        opacity 1.5s ease,
+        transform 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .fade-in-on-scroll.visible {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
 
 @media screen and (min-width: 768px) {
-  .delay-1 {
-    transition-delay: 0.5s;
-  }
+    .delay-1 {
+        transition-delay: 0.5s;
+    }
 
-  .delay-2 {
-    transition-delay: 0;
-  }
+    .delay-2 {
+        transition-delay: 0;
+    }
 }
 
 @media screen and (min-width: 1024px) {
-  .delay-1 {
-    transition-delay: 0.5s;
-  }
+    .delay-1 {
+        transition-delay: 0.5s;
+    }
 
-  .delay-2 {
-    transition-delay: 1s;
-  }
+    .delay-2 {
+        transition-delay: 1s;
+    }
 }

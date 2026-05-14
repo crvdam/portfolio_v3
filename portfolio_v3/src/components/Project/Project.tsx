@@ -19,7 +19,7 @@ function Project({
 }) {
     return (
         <li className={`tile project fade-in-on-scroll delay-${delay}`}>
-            <h3>{title}</h3>
+            <h4>{title}</h4>
             {features && (
                 <ul className="features-list">
                     {features.map((feature, index) => (
