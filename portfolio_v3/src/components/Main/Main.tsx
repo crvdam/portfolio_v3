@@ -16,11 +16,9 @@ function Main() {
                     <p>
                         Hi, I'm Caspar, a fullstack developer based in
                         Amsterdam. I'm passionate about building websites that
-                        are fast, beautiful, and effective. Whether it's
-                        crafting clean interfaces or architecting solid
-                        backends, I care deeply about the craft and I'm always
-                        pushing to get better at it. If you have a project in
-                        mind or just want to talk,{' '}
+                        are fast, beautiful, and effective. I care deeply about
+                        the craft and I'm always pushing to get better at it. If
+                        you have a project in mind or just want to talk,{' '}
                         <a href="mailto:casparvandam@gmail.com">
                             <strong>I'd love to hear from you.</strong>
                         </a>
@@ -116,7 +114,7 @@ function Main() {
                         ]}
                         projectLink="https://celebrity.casparvandam.com"
                         githubLink="https://github.com/crvdam/celebrity"
-                        techStack={['Svelte', 'TMDB api']}
+                        techStack={['Svelte', 'TMDB API']}
                         delay="0"
                     />
                     <Project
@@ -129,7 +127,7 @@ function Main() {
                         ]}
                         projectLink="https://movies.casparvandam.com"
                         githubLink="https://github.com/crvdam/moviedb"
-                        techStack={['Vue', 'Pinia', 'TMDB api']}
+                        techStack={['Vue', 'Pinia', 'TMDB API']}
                         delay="1"
                     />
                     <Project
@@ -137,7 +135,6 @@ function Main() {
                         features={[
                             'Pinia state management',
                             'View, sort, filter house listings',
-                            'Original API no langer available',
                         ]}
                         projectLink="https://realestate.casparvandam.com"
                         githubLink="https://github.com/crvdam/real-estate"
@@ -163,7 +160,7 @@ function Main() {
                         title="Terminal Hangman"
                         features={['Hangman CLI game with Merriam-Webster API']}
                         githubLink="https://github.com/crvdam/hangman"
-                        techStack={['Python', 'Merriam-Webster api']}
+                        techStack={['Python', 'Merriam-Webster API']}
                         delay="1"
                     />
                 </ul>
