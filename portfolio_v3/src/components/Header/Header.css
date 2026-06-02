@@ -30,11 +30,11 @@ header {
     }
 
     path.sun {
-        fill: rgb(255, 213, 73);
+        fill: rgb(255, 196, 0);
     }
 
     path.moon {
-        fill: rgb(219, 219, 219);
+        fill: var(--clr-text);
     }
 }
 
