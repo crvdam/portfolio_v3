@@ -89,7 +89,7 @@ function Main() {
                                     Prisma
                                 </li>
                                 <li className="skill light text-tiny">
-                                    dnd kit
+                                    dnd-kit
                                 </li>
                             </ul>
                         </div>
@@ -107,45 +107,11 @@ function Main() {
                 </div>
                 <ul className="tile-list projects">
                     <Project
-                        title="Portrait game"
-                        features={[
-                            'Celebrity portrait guessing game with TMDB API',
-                            'Countdown timer and highscore in local storage',
-                        ]}
-                        projectLink="https://celebrity.casparvandam.com"
-                        githubLink="https://github.com/crvdam/celebrity"
-                        techStack={['Svelte', 'TMDB API']}
-                        delay="0"
-                    />
-                    <Project
-                        title="Movie database"
-                        features={[
-                            'TMDB API',
-                            'Pinia state management',
-                            'Dynamic background colors based on hero image',
-                            'Endless scroll',
-                        ]}
-                        projectLink="https://movies.casparvandam.com"
-                        githubLink="https://github.com/crvdam/moviedb"
-                        techStack={['Vue', 'Pinia', 'TMDB API']}
-                        delay="1"
-                    />
-                    <Project
-                        title="Real estate database"
-                        features={[
-                            'Pinia state management',
-                            'View, sort, filter house listings',
-                        ]}
-                        projectLink="https://realestate.casparvandam.com"
-                        githubLink="https://github.com/crvdam/real-estate"
-                        techStack={['Vue', 'Pinia', 'Vue Router']}
-                        delay="2"
-                    />
-                    <Project
                         title="Messenger"
                         features={[
-                            'Authentication and message storage with Django back-end',
-                            'Real-time communication with WebSockets (Django Channels)',
+                            'Real-time communication through WebSockets',
+                            'Authentication',
+                            'Message history',
                         ]}
                         githubLink="https://github.com/crvdam/messenger"
                         techStack={[
@@ -157,11 +123,27 @@ function Main() {
                         delay="0"
                     />
                     <Project
-                        title="Terminal Hangman"
-                        features={['Hangman CLI game with Merriam-Webster API']}
-                        githubLink="https://github.com/crvdam/hangman"
-                        techStack={['Python', 'Merriam-Webster API']}
+                        title="Movie database"
+                        features={[
+                            'Pinia state management',
+                            'Dynamic background colors based on hero image',
+                            'Endless scroll',
+                        ]}
+                        projectLink="https://movies.casparvandam.com"
+                        githubLink="https://github.com/crvdam/moviedb"
+                        techStack={['Vue', 'Pinia', 'TMDB API']}
                         delay="1"
+                    />
+                    <Project
+                        title="Portrait game"
+                        features={[
+                            'Celebrity portrait guessing game',
+                            'Countdown timer and highscore in local storage',
+                        ]}
+                        projectLink="https://celebrity.casparvandam.com"
+                        githubLink="https://github.com/crvdam/celebrity"
+                        techStack={['Svelte', 'TMDB API']}
+                        delay="2"
                     />
                 </ul>
             </section>
@@ -172,34 +154,36 @@ function Main() {
                 <div className="resume-subcategory fade-in-on-scroll skills">
                     <h3>Languages</h3>
                     <ul className="skill-list">
-                        <li className="skill text-small">TypeScript</li>
+                        <li className="skill text-small">
+                            JavaScript / TypeScript
+                        </li>
                         <li className="skill text-small">Python</li>
                         <li className="skill text-small">ColdFusion</li>
                     </ul>
 
-                    <h3>Frameworks / libraries</h3>
+                    <h3>Frontend</h3>
                     <ul className="skill-list">
                         <li className="skill text-small">Next.js</li>
                         <li className="skill text-small">React</li>
                         <li className="skill text-small">Vue.js</li>
-                        <li className="skill text-small">Svelte</li>
-                        <li className="skill text-small">Django</li>
                     </ul>
 
-                    <h3>Database and search</h3>
+                    <h3>Backend and Data</h3>
                     <ul className="skill-list">
-                        <li className="skill text-small">Supabase</li>
+                        <li className="skill text-small">Node.js</li>
+                        <li className="skill text-small">Django</li>
                         <li className="skill text-small">PostgreSQL</li>
                         <li className="skill text-small">Apache Solr</li>
                     </ul>
                     <h3>Other</h3>
                     <ul className="skill-list">
+                        <li className="skill text-small">
+                            Git / GitHub (Actions)
+                        </li>
                         <li className="skill text-small">Playwright</li>
                         <li className="skill text-small">Jira</li>
                         <li className="skill text-small">Figma</li>
-                        <li className="skill text-small">
-                            GitHub / GitHub Actions
-                        </li>
+                        <li className="skill text-small">Scrum / Agile</li>
                     </ul>
                 </div>
 
@@ -216,26 +200,32 @@ function Main() {
                         <br></br>
                         <ul className="styled-list">
                             <li className="text-small">
-                                Collaborated with a multidisciplinary team of
-                                developers, designers, and a product owner on a
-                                SaaS product used to build online platforms for
-                                B2B clients.
+                                Collaborated within a multidisciplinary (agile)
+                                team of developers, designers and product owners
+                                on a SaaS product comprising components such as
+                                CMS, PIM, CRM and e-commerce.
                             </li>
                             <li className="text-small">
-                                Implemented automated end-to-end tests with
-                                Playwright.
+                                Built a fully configurable product filter that
+                                uses Solr queries to let users efficiently
+                                filter assortments of thousands of products,
+                                configurable per client within a platform
+                                serving 50+ B2B websites.
                             </li>
                             <li className="text-small">
-                                Monitored and optimized Core Web Vitals for
-                                clients' online platforms.
+                                Automated end-to-end testing of customer forms
+                                with Playwright and GitHub Actions, surfacing
+                                failures in core customer processes immediately.
                             </li>
                             <li className="text-small">
-                                Developed web-apps and components based on Figma
-                                wireframes.
+                                Acted as the primary point of contact for
+                                stakeholders around the CRM and e-commerce
+                                functionality, translating business needs into
+                                concrete requirements and priorities.
                             </li>
                             <li className="text-small">
-                                Served as product owner for Accessify's lead
-                                generation platform.
+                                Monitored and optimized platform performance,
+                                focusing on Core Web Vitals and technical SEO.
                             </li>
                             <br></br>
                         </ul>
