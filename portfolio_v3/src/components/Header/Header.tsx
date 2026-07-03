@@ -1,48 +1,48 @@
-import "./Header.css";
-import Slider from "../Slider/Slider";
-import { useState, useEffect, useRef } from "react";
+import './Header.css';
+import Slider from '../Slider/Slider';
+import { useState, useEffect, useRef } from 'react';
 
 interface HeaderProps {
-  onSliderChange: (percentage: number) => void;
+    onSliderChange: (percentage: number) => void;
 }
 
 function Header({ onSliderChange }: HeaderProps) {
-  const [showSlider, setShowSlider] = useState(false);
-  const wrapperRef = useRef<HTMLDivElement>(null);
+    const [showSlider, setShowSlider] = useState(false);
+    const wrapperRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const handleOutsideClick = (event: MouseEvent | TouchEvent) => {
-      if (
-        wrapperRef.current &&
-        !wrapperRef.current.contains(event.target as Node)
-      ) {
-        setShowSlider(false);
-      }
-    };
+    useEffect(() => {
+        const handleOutsideClick = (event: MouseEvent | TouchEvent) => {
+            if (
+                wrapperRef.current &&
+                !wrapperRef.current.contains(event.target as Node)
+            ) {
+                setShowSlider(false);
+            }
+        };
 
-    document.addEventListener("mousedown", handleOutsideClick);
-    document.addEventListener("touchstart", handleOutsideClick);
+        document.addEventListener('mousedown', handleOutsideClick);
+        document.addEventListener('touchstart', handleOutsideClick);
 
-    return () => {
-      document.removeEventListener("mousedown", handleOutsideClick);
-      document.removeEventListener("touchstart", handleOutsideClick);
-    };
-  }, []);
+        return () => {
+            document.removeEventListener('mousedown', handleOutsideClick);
+            document.removeEventListener('touchstart', handleOutsideClick);
+        };
+    }, []);
 
-  return (
-    <>
-      <header>
-        <div
-          ref={wrapperRef}
-          className={`colorchange-wrapper ${showSlider ? "" : "minimized"}`}
-        >
-          <div className="button-wrapper">
-            <button
-              className="button-show-slider"
-              onClick={() => setShowSlider(!showSlider)}
-            >
-              {/* prettier-ignore */}
-              <svg
+    return (
+        <>
+            <header>
+                <div
+                    ref={wrapperRef}
+                    className={`colorchange-wrapper ${showSlider ? '' : 'minimized'}`}
+                >
+                    <div className="button-wrapper">
+                        <button
+                            className="button-show-slider"
+                            onClick={() => setShowSlider(!showSlider)}
+                        >
+                            {/* prettier-ignore */}
+                            <svg
                   fill="#000000"
                   height="800px"
                   width="800px"
@@ -60,16 +60,16 @@ function Header({ onSliderChange }: HeaderProps) {
                   <path className="sun" d="M11,16c0-3.1,1.3-5.9,3.3-7.9C13.9,8,13.5,8,13,8c-4.4,0-8,3.6-8,8s3.6,8,8,8c0.5,0,0.9,0,1.3-0.1C12.3,21.9,11,19.1,11,16z"
                   />
                 </svg>
-            </button>
-          </div>
-          <div className="slider-wrapper">
-            <Slider onValueChange={onSliderChange} />
-          </div>
-        </div>
-      </header>
-      <div className="spacer"></div>
-    </>
-  );
+                        </button>
+                    </div>
+                    <div className="slider-wrapper">
+                        <Slider onValueChange={onSliderChange} />
+                    </div>
+                </div>
+            </header>
+            <div className="spacer"></div>
+        </>
+    );
 }
 
 export default Header;
