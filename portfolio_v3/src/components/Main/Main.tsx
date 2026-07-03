@@ -48,7 +48,7 @@ function Main() {
                                     Drag and drop with dnd-kit
                                 </li>
                                 <li className="text-small">
-                                    Supabase database storage
+                                    Supabase database storage with Prisma as ORM
                                 </li>
                             </ul>
                             <div className="featuredProjectLinks">
